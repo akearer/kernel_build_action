@@ -38,10 +38,10 @@ jobs:
     - name: Build Kernel
       uses: ./
       with:
-          kernel-url: https://github.com/AcmeUI-Devices/android_kernel_xiaomi_cas
-          kernel-dir: msm-4.19
-          kernel-branch: taffy
-          config: cas_defconfig
+          kernel-url: https://github.com/akearer/android_kernel_oppo_mt6833
+          kernel-dir: .
+          kernel-branch: oppo/mt6833_u_14.0.0_a2_5g
+          config: arch/arm64/configs/a2_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
