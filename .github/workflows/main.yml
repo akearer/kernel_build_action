@@ -39,15 +39,15 @@ jobs:
       uses: ./
       with:
           kernel-url: https://github.com/akearer/android_kernel_oppo_mt6833
-          kernel-dir: 
+          kernel-dir: .
           kernel-branch: oppo/mt6833_u_14.0.0_a2_5g
-          config: arch/arm64/configs/a2_defconfig
+          config: a2_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
           ksu: true
           ksu-version: main
-          android-version: 12
+          android-version: 14
           aosp-clang-version: r383902
           disable-lto: true
           anykernel3: true
